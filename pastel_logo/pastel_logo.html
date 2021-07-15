@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background: #19191A;
+    }
+
+    div:before {
+        content: "";
+        width: 75px;
+        height: 125px;
+        background: #F9E492;
+        position: absolute;
+        z-index: -1;
+        top: 50%;
+    }
+
+    div:after {
+        content: "";
+        width: 75px;
+        height: 75px;
+        background: #9AD5FF;
+        border-bottom-left-radius: 75px;
+        border-right: 0;
+        border-bottom: 0;
+        position: absolute;
+        top: 50%;
+        z-index: 1;
+    }
+
+    div {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background: #4F77FF;
+        position: relative;
+        top: calc(50% - 100px);
+        left: calc(50% - 75px);
+    }
+</style>
+
+<body>
+    <div></div>
+</body>
+
+</html>

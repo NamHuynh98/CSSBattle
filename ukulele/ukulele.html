@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+        background: #F3AC3C;
+    }
+
+    div:nth-child(1) {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        position: relative;
+        top: calc(50% - 60px);
+        left: 37px;
+        background: #998235;
+    }
+
+    div:nth-child(1):after {
+        content: "";
+        width: 10px;
+        height: 40px;
+        border-radius: 10px;
+        position: absolute;
+        top: calc(50% - 20px);
+        left: calc(50% - 20px);
+        background: #1A4341;
+    }
+
+    div:nth-child(2) {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        position: relative;
+        top: calc(50% - 170px);
+        left: 107px;
+        background: #998235;
+    }
+
+    div:nth-child(2):before {
+        content: "";
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        position: absolute;
+        border: 5px solid #F3AC3C;
+        top: calc(50% - 25px);
+        left: calc(50% - 25px);
+        background: #1A4341;
+        box-sizing: border-box;
+    }
+
+    div:nth-child(2):after {
+        content: "";
+        width: 150px;
+        height: 20px;
+        position: absolute;
+        top: calc(50% - 10px);
+        left: calc(50% + 5px);
+        background: #1A4341;
+        box-sizing: border-box;
+        z-index: -1;
+    }
+
+    div:nth-child(3) {
+        width: 40px;
+        height: 30px;
+        background: #998235;
+        border-radius: 10px;
+        position: relative;
+        top: calc(-33% + 1px);
+        left: 80%;
+    }
+
+    div:nth-child(3):after {
+        content: "";
+        width: 20px;
+        height: 4px;
+        background: #1A4341;
+        border-radius: 10px;
+        position: absolute;
+        top: calc(50% - 7px);
+        left: calc(50% - 10px);
+    }
+
+    div:nth-child(3):before {
+        content: "";
+        width: 20px;
+        height: 4px;
+        background: #1A4341;
+        border-radius: 10px;
+        position: absolute;
+        top: calc(50% + 3px);
+        left: calc(50% - 10px);
+    }
+</style>
+
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+
+</html>
