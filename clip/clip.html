@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background: #F3AC3C;
+    }
+
+    .elm1 {
+        width: 150px;
+        height: 150px;
+        background: #998235;
+        border-radius: 100px 100px 80px 80px;
+        position: relative;
+        top: calc(50% - 75px);
+        left: calc(50% - 75px);
+    }
+
+    .elm1:after {
+        content: "";
+        width: 40px;
+        height: 40px;
+        background: #1A4341;
+        border: 10px solid #998235;
+        border-radius: 50%;
+        z-index: -1;
+        position: absolute;
+        top: calc(50% - 85px);
+        left: calc(50% - 85px);
+    }
+
+    .elm1:before {
+        content: "";
+        width: 40px;
+        height: 40px;
+        background: #1A4341;
+        border: 10px solid #998235;
+        border-radius: 50%;
+        z-index: -1;
+        position: absolute;
+        top: calc(50% - 85px);
+        left: calc(50% + 25px);
+    }
+
+    .elm2 {
+        width: 20px;
+        height: 20px;
+        background: #1A4341;
+        border-radius: 50%;
+        position: absolute;
+        top: calc(50% - 15px);
+        left: calc(50% - 50px);
+    }
+
+    .elm2:after {
+        content: "";
+        width: 0px;
+        height: 0px;
+        border-left: 26px solid transparent;
+        border-right: 26px solid transparent;
+        border-top: 26px solid #1A4341;
+        border-radius: 50%;
+        position: absolute;
+        top: calc(50% - 70px);
+        left: calc(50% + 14px);
+    }
+
+    .elm2:before {
+        content: "";
+        width: 20px;
+        height: 20px;
+        background: #1A4341;
+        border-radius: 50%;
+        position: absolute;
+        top: calc(50% - 10px);
+        left: calc(50% + 70px);
+    }
+
+    .elm3 {
+        width: 100px;
+        height: 40px;
+        background: #FFFFFF;
+        position: absolute;
+        top: calc(50% + 20px);
+        left: calc(50% - 50px);
+        border-radius: 20px 20px 50px 50px;
+    }
+
+    .elm4 {
+        width: 10px;
+        height: 25px;
+        background: #1A4341;
+        position: relative;
+        top: 2px;
+        left: calc(50% - 5px);
+    }
+
+    .elm4:after {
+        content: "";
+        width: 17px;
+        height: 17px;
+        background: transparent;
+        position: absolute;
+        top: 3px;
+        left: 0px;
+        border: 10px solid #1A4341;
+        border-left: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-radius: 50%;
+        transform: rotate(135deg);
+    }
+
+    .elm4:before {
+        content: "";
+        width: 17px;
+        height: 17px;
+        background: transparent;
+        position: absolute;
+        top: 3px;
+        left: -27px;
+        border: 10px solid #1A4341;
+        border-left: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-radius: 50%;
+        transform: rotate(135deg);
+    }
+</style>
+
+<body>
+    <div class="elm1"></div>
+    <div class="elm2"></div>
+    <div class="elm3"></div>
+    <div class="elm4"></div>
+</body>
+
+</html>

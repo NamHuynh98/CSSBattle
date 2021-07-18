@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background: #191919;
+    }
+
+    div {
+        background: #191919;
+        width: 50px;
+        height: 50px;
+        border: 10px solid #5DBCF9;
+    }
+
+    .elm1 {
+        position: relative;
+        top: calc(50% - 36px);
+        left: calc(50% - 35px);
+    }
+
+    .elm1:after {
+        content: "";
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: calc(-100% - 20px);
+        left: calc(-200% + 30px);
+        border: 10px solid #5DBCF9;
+        border-radius: 50px 50px 0px;
+    }
+
+    .elm1:before {
+        content: "";
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: calc(-100% - 20px);
+        left: 100%;
+        border: 10px solid #5DBCF9;
+        border-radius: 50px 50px 50px 0px;
+    }
+
+    .elm2 {
+        border-radius: 50px 0px 50px 50px;
+        position: relative;
+        top: calc(50% - 46px);
+        left: calc(50% - 95px);
+    }
+
+    .elm2:after {
+        content: "";
+        width: 50px;
+        height: 50px;
+        border-radius: 0px 50px 50px 50px;
+        position: absolute;
+        border: 10px solid #5DBCF9;
+        top: -10px;
+        left: calc(200% + 10px);
+    }
+</style>
+
+<body>
+    <div class="elm1"></div>
+    <div class="elm2"></div>
+</body>
+
+</html>

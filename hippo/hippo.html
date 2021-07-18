@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background: #191919;
+    }
+
+    .elm1 {
+        width: 130px;
+        height: 150px;
+        background: #FE5F55;
+        border-radius: 60px 60px 0 0;
+        position: relative;
+        top: calc(50% - 75px);
+        left: calc(50% - 65px);
+    }
+
+    .elm1:after {
+        content: "";
+        width: 9px;
+        height: 29px;
+        background: #000000;
+        border-radius: 50%;
+        border: 6px solid #FE5F55;
+        transform: rotate(-45deg);
+        position: absolute;
+        z-index: -1;
+        top: -7px;
+        left: 18px;
+    }
+
+    .elm1:before {
+        content: "";
+        width: 9px;
+        height: 29px;
+        background: #000000;
+        border-radius: 50%;
+        border: 6px solid #FE5F55;
+        transform: rotate(45deg);
+        position: absolute;
+        z-index: -1;
+        top: -7px;
+        left: calc(100% - 39px);
+    }
+
+    .elm2 {
+        width: 9px;
+        height: 10px;
+        background: #000000;
+        border-radius: 50%;
+        position: absolute;
+        top: calc(50% - 25px);
+        left: calc(50% - 40px);
+    }
+
+    .elm2:before {
+        content: "";
+        width: 9px;
+        height: 10px;
+        background: #000000;
+        border-radius: 50%;
+        position: absolute;
+        top: calc(50% - 5px);
+        left: calc(50% + 66px);
+    }
+
+    .elm3 {
+        width: 150px;
+        height: 100px;
+        border-radius: 60px 60px 50px 50px;
+        background: #A64942;
+        position: relative;
+        top: -13px;
+        left: calc(50% - 75px);
+    }
+
+    .elm3:after {
+        content: "";
+        width: 20px;
+        height: 30px;
+        border-radius: 50%;
+        background: #000000;
+        position: absolute;
+        transform: rotate(45deg);
+        top: calc(50% - 30px);
+        left: calc(50% - 50px);
+    }
+
+    .elm3:before {
+        content: "";
+        width: 20px;
+        height: 30px;
+        border-radius: 50%;
+        background: #000000;
+        position: absolute;
+        transform: rotate(-45deg);
+        top: calc(50% - 30px);
+        left: calc(50% + 30px);
+    }
+</style>
+
+<body>
+    <div class="elm1"></div>
+    <div class="elm2"></div>
+    <div class="elm3"></div>
+</body>
+
+</html>
