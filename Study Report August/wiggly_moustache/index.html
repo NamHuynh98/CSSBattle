@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: #F5D6B4;
+    }
+
+    body::after {
+        content: "";
+        position: absolute;
+        top: 46.5%;
+        left: 17.5%;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #D86F45;
+    }
+
+    body::before {
+        content: "";
+        position: absolute;
+        top: 46.5%;
+        right: 17.5%;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #D86F45;
+        z-index: 1;
+    }
+
+    div {
+        position: relative;
+        top: calc(50% - 50px);
+        left: calc(50% - 50px);
+        width: 60px;
+        height: 35px;
+        background: #F5D6B4;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        border: 20px solid #D86F45;
+        border-bottom: 0;
+    }
+
+    div::before {
+        content: "";
+        position: absolute;
+        top: 80%;
+        left: 100%;
+        width: 60px;
+        height: 32px;
+        background: #F5D6B4;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        border: 20px solid #D86F45;
+        border-top: 0;
+    }
+
+    div::after {
+        content: "";
+        position: absolute;
+        top: 80%;
+        left: calc(-100% - 40px);
+        width: 60px;
+        height: 32px;
+        background: #F5D6B4;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        border: 20px solid #D86F45;
+        border-top: 0;
+    }
+</style>
+
+<body>
+    <div></div>
+</body>
+
+</html>

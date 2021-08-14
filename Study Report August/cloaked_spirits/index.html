@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: #62306D;
+        margin: 0;
+        position: relative;
+    }
+
+    .div1 {
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 50%;
+        left: 12.5%;
+        border: 20px solid #AA445F;
+        background: #E38F66;
+        border-radius: 50%;
+    }
+
+    .div1::before {
+        content: "";
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        z-index: -1;
+        background: #F7EC7D;
+        left: -20px;
+        top: 50%;
+    }
+
+    .div2 {
+        width: 60px;
+        height: 60px;
+        position: relative;
+        top: 50%;
+        right: -62.5%;
+        border: 20px solid #AA445F;
+        background: #E38F66;
+        border-radius: 50%;
+    }
+
+    .div2::before {
+        content: "";
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        z-index: -1;
+        background: #F7EC7D;
+        left: -20px;
+        top: 50%;
+    }
+
+    .div3 {
+        width: 60px;
+        height: 60px;
+        position: relative;
+        top: -16.8%;
+        right: -37.5%;
+        border: 20px solid #E38F66;
+        background: #AA445F;
+        border-radius: 50%;
+    }
+
+    .div3::before {
+        content: "";
+        width: 100px;
+        height: 200px;
+        position: absolute;
+        z-index: -1;
+        background: #F7EC7D;
+        left: -20px;
+        top: 50%;
+    }
+</style>
+
+<body>
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+</body>
+
+</html>
